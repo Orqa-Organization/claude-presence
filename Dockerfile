@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1.7
 # Multi-stage build for claude-presence-server (HTTP MCP).
 # Three stages so the runtime gets ONLY production deps (no vitest, no esbuild,
 # no typescript). Trivy then scans a clean tree.
