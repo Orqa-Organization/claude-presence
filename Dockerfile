@@ -55,7 +55,6 @@ ENV LOG_LEVEL=info
 
 EXPOSE 3471
 
-VOLUME ["/var/lib/claude-presence"]
 
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 --start-period=5s \
   CMD wget -qO- "http://127.0.0.1:${PORT}/healthz" >/dev/null 2>&1 || exit 1
